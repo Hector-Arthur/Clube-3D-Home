@@ -1,0 +1,26 @@
+:root{
+    --cor-de-fundo: #EEEEEE;
+    --branco-principal: #FFFFFF;
+    --cor-banner: #000000;
+    --font-Inter: 'inter';
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+Body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-Inter);
+
+}
+.banner{
+    background-color: var(--cor-banner);
+}
+.banner h1{
+    color: #7B2CBF;
+}
+.banner h2{
+    color: var(--branco-principal);
+}
