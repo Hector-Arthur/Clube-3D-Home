@@ -1,26 +1,61 @@
 :root{
-    --cor-de-fundo: #EEEEEE;
+    --cor-de-fundo: #FCFCFC;
     --branco-principal: #FFFFFF;
     --cor-banner: #000000;
     --font-Inter: 'inter';
-
+    --cor-titulo: #7b2cbf;
 }
 *{
     margin: 0;
     padding: 0;
 }
-Body{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+body{
     font-family: var(--font-Inter);
-
+    background-color: var(--cor-de-fundo);
 }
-.banner{
+/* Inicio do header */
+header{
+    display: flex;
+    justify-content: center;
     background-color: var(--cor-banner);
+    color: var(--branco-principal);
+    max-height: 170px;
+    min-height: 170px;
 }
-.banner h1{
-    color: #7B2CBF;
+.container__logo{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
 }
-.banner h2{
+.logo{
+    border-radius: 50%;
+    max-width: 25%;
+}
+.container__logo h1{
+    margin-left: 15px;
+    color: var(--cor-titulo);
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.menu li{
+    margin: 0 15px;
+    padding: 5px;
+}
+.menu a{
+    text-decoration: none;
     color: var(--branco-principal);
 }
+/* Final do header */
+/* Inicio do ?*/
+
+/*Final do ?*/
