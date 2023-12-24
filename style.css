@@ -3,11 +3,11 @@
     --branco-principal: #FFFFFF;
     --cor-banner: #000000;
     --roxo-principal: #7B2CBF;
-    --cor-home: #D00000;
-    --cor-quem-somos: #48CAE4;
-    --cor-dar-a-mao: #FFDD00;
-    --cor-instagram: #FF4D6D;
-    --cor-doaçao: #008000;
+    --cor-home: #D00000;   /*vermelho*/
+    --cor-quem-somos: #48CAE4; /*azul*/
+    --cor-dar-a-mao: #FFDD00;  /*amarelo*/
+    --cor-instagram: #FF4D6D;  /*rosa*/
+    --cor-doaçao: #008000; /*verde*/
     --cor-rodape: #5F5F5F;
     --cor-rodape-texto: #9F9F9F;
     --font-Inter: 'inter';
@@ -149,18 +149,19 @@ nav{
     text-shadow: 0.5px 0.5px 3px white;
     text-align: center;
     display: inline-block;
-    text-decoration: none;
     cursor: pointer;
-    color: var(--branco-principal);
     border: 2.5px solid var(--cor-home); /* Vermelho */
     background-color: red; /* Vermelho */
     transition: background-color 0.4s, color 0.4s;
-    
 }
 .botao:hover{
     background-color: var(--roxo-principal); /* Roxo */
     color: #FFF;
     border-color: #8e44ad; /* Roxo */
+}
+.botao a{
+    text-decoration: none;
+    color: var(--branco-principal);
 }
 .texto{
     font-family: var(--font-Inter);
