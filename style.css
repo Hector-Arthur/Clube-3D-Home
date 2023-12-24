@@ -1,9 +1,16 @@
 :root{
-    --cor-de-fundo: #FCFCFC;
+    --cor-de-fundo: #F8F8F8;
     --branco-principal: #FFFFFF;
     --cor-banner: #000000;
+    --roxo-principal: #7B2CBF;
+    --cor-home: #D00000;   /*vermelho*/
+    --cor-quem-somos: #48CAE4; /*azul*/
+    --cor-dar-a-mao: #FFDD00;  /*amarelo*/
+    --cor-instagram: #FF4D6D;  /*rosa*/
+    --cor-doaçao: #008000; /*verde*/
+    --cor-rodape: #505050;
     --font-Inter: 'inter';
-    --cor-titulo: #7b2cbf;
+    --font-Rethink-Sans: 'Rethink Sans';
 }
 *{
     margin: 0;
@@ -13,8 +20,9 @@ body{
     font-family: var(--font-Inter);
     background-color: var(--cor-de-fundo);
 }
-/* Inicio do header */
+/* Inicio header */
 header{
+    font-weight: 400;
     display: flex;
     justify-content: center;
     background-color: var(--cor-banner);
@@ -32,8 +40,11 @@ header{
     max-width: 25%;
 }
 .container__logo h1{
+    font-size: 45px;
     margin-left: 15px;
-    color: var(--cor-titulo);
+    font-family: var(--font-Rethink-Sans);
+    color: var(--roxo-principal);
+    text-shadow: 2px 2px 4px purple;
 }
 nav{
     display: flex;
@@ -43,6 +54,7 @@ nav{
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-weight: 400;
     margin-bottom: 20px;
     padding: 0;
     letter-spacing: 1px;
@@ -55,7 +67,140 @@ nav{
     text-decoration: none;
     color: var(--branco-principal);
 }
-/* Final do header */
-/* Inicio do ?*/
+/* Inicio botões*/
+.menu .home{
+    color: var(--cor-home);
+    text-shadow: 0.5px 0.5px 4px red;
+}
+.menu .home:hover{
+    color: red;
+}
+.menu .quem_somos{
+    color: var(--cor-quem-somos);
+    text-shadow: 0.5px 0.5px 4px blue;
+}
+.menu .quem_somos:hover{
+    color: aquamarine;
+}
+.menu .dar_a_mao{
+    color: var(--cor-dar-a-mao);
+    text-shadow: 0.5px 0.5px 4px yellow;
+}
+.menu .dar_a_mao:hover{
+    color: gold;
+}
+.menu .instagram{
+    text-shadow: 0.5px 0.5px 4px pink;
+    color: var(--cor-instagram);
+}
+.menu .instagram:hover{
+    color: palevioletred;
+}
+.menu .doacao{
+    color: var(--cor-doaçao);
+    text-shadow: 0.5px 0.5px 4px green;
+}
+.menu .doacao:hover{
+    color: greenyellow;
+}
+.menu .cor:active{
+    color: var(--roxo-principal);
+    text-shadow: 0.5px 0.5px 4px violet;
+}
+/* Final botões*/
+/* Final header */
 
-/*Final do ?*/
+.banner{
+    background-image: url(Img/banner.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    height: 52em;
+    font-weight: 600;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    text-shadow: 0.5px 0.5px 2px grey;
+    font-size: 15px;
+    margin: 0 auto 10px auto;
+}
+.content h1{
+    font-family: var(--font-Rethink-Sans);
+    font-size: 55px;
+    margin: 10px;
+    color: var(--roxo-principal);
+    text-shadow: 2px 2px 4dvi purple;
+}
+.botao{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin: 5px;
+    text-shadow: 0.5px 0.5px 3px white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--branco-principal);
+    border: 2.5px solid var(--cor-home); /* Vermelho */
+    background-color: red; /* Vermelho */
+    transition: background-color 0.4s, color 0.4s;
+    
+}
+.botao:hover{
+    background-color: var(--roxo-principal); /* Roxo */
+    color: #FFF;
+    border-color: #8e44ad; /* Roxo */
+}
+/*
+.botao {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #e74c3c; 
+    border-radius: 5px;
+    color: #e74c3c; 
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0
+  }
+  .botao:hover {
+    background-color: #8e44ad; 
+    color: #fff;
+    border-color: #8e44ad; 
+  }
+  */
+
+.texto{
+    font-family: var(--font-Inter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin: 0 9em 25px;
+}
+.texto h1{
+    font-family: var(--font-Rethink-Sans);
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: var(--cor-home);
+}
+.texto p{
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    color: #303030;
+}
